@@ -1,4 +1,45 @@
-baseURL = 'https://rgxsec.github.io/'
-languageCode = 'en-us'
-title = 'rgxsec'
+baseURL = "https://rgxsec.github.io/"
+languageCode = "en-us"
+title = "RGXSec Blog"
 theme = "PaperMod"
+defaultContentLanguage = "en"
+enableInlineShortcodes = true
+enableRobotsTXT = true
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  env = "production" # or "development"
+  title = "RGXSec"
+  description = "Exploring security through curiosity"
+  keywords = ["Blog", "Cybersecurity", "Malware", "Reverse Engineering"]
+  author = "RGX"
+  DateFormat = "2006-01-02"
+  ShowReadingTime = true
+  ShowCodeCopyButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowShareButtons = true
+  ShowToc = true
+
+[params.profileMode]
+  enabled = true
+  title = "RGXSec"
+  subtitle = "Reverse engineering, cyber mysteries, and digital trench warfare."
+  imageUrl = "https://avatars.githubusercontent.com/u/0000000?v=4" # replace with yours
+  imageTitle = "RGXSec"
+  buttons = [
+    { name = "Posts", url = "/posts" },
+    { name = "GitHub", url = "https://github.com/rgxsec" }
+  ]
+
+[[menu.main]]
+  name = "Posts"
+  url = "/posts"
+  weight = 1
+
+[[menu.main]]
+  name = "Tags"
+  url = "/tags"
+  weight = 2
